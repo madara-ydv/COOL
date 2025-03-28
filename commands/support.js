@@ -10,6 +10,7 @@ module.exports = {
     run: async (client, interaction, lang) => {
         try {
             const supportServerLink = "https://discord.gg/tqZ3NVCQVJ";
+            const youtubeLink = "https://www.youtube.com/@Hrgamerzlive";
 
             const embed = new EmbedBuilder()
                 .setColor('#b300ff')
@@ -20,6 +21,7 @@ module.exports = {
                 })
                 .setDescription(lang.support.embed.description
                     .replace("{supportServerLink}", supportServerLink)
+                    .replace("{youtubeLink}", youtubeLink)
                 );
 
             await interaction.reply({ embeds: [embed] });
