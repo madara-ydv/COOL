@@ -20,7 +20,7 @@ module.exports = {
                 })
                 .setDescription(lang.support.embed.description
                     .replace("{supportServerLink}", supportServerLink)
-                )
+                );
 
             await interaction.reply({ embeds: [embed] });
         } catch (e) {
